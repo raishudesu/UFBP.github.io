@@ -191,6 +191,7 @@ nav ul h6 a:hover{
     height: 30px;
     border: solid 2px gray;
     border-radius: 10px;
+    width: 100%;
 }
 .booking textarea{
     resize: none;
@@ -332,7 +333,7 @@ nav ul h6 a:hover{
     }
 }
 @media (max-width: 1366){
-    
+
 }
 
 @media (max-width: 768px){
@@ -390,7 +391,7 @@ nav ul h6 a:hover{
         font-size: 40px;
     }
     .heading-confirm a{
-        font-size: 12px;
+        font-size: 11px;
     }
     
     .header img{
@@ -422,6 +423,9 @@ nav ul h6 a:hover{
     .booking-container form h1{
         font-size: 20px;
     }
+    .booking button{
+        font-size: 11px;
+    }
 
     /*third page*/
 
@@ -431,6 +435,7 @@ nav ul h6 a:hover{
         height: 120%;
     }
     .calendar-container{
+        margin-top: 50px;
         width: auto;
         text-align: center;
     }
@@ -465,7 +470,7 @@ nav ul h6 a:hover{
         height: 200px;
     }
     .contact-us form{
-        width: 75%;
+        width: 90%;
     }
     .contact-us form button{
         font-size: 11px;
