@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <nav id="navbar" class="nav">
+        <img id="logo" src="assets/psu-logo.png" alt="logo">
+        <label for="">SEPO</label>
+        <ul>
+            <h6><a id="a1" href="#top">Home</a></h6>
+            <h6><a id="a2" href="#calendar">Schedules</a></h6>
+            <h6><a id="a3" href="#contact-us">Contact</a></h6>
+        </ul>
+        <label id="navigator" for="navigator">
+            <svg width="30px" height="30px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <title>ic_fluent_navigation_24_filled</title> <desc>Created with Sketch.</desc> <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="ic_fluent_navigation_24_filled" fill="#ffffff" fill-rule="nonzero"> <path d="M3,17 L21,17 C21.5522847,17 22,17.4477153 22,18 C22,18.5128358 21.6139598,18.9355072 21.1166211,18.9932723 L21,19 L3,19 C2.44771525,19 2,18.5522847 2,18 C2,17.4871642 2.38604019,17.0644928 2.88337887,17.0067277 L3,17 L21,17 L3,17 Z M2.99987969,11 L20.9998797,10.9978344 C21.5521644,10.9977679 22,11.4454293 22,11.997714 C22,12.5105499 21.6140635,12.9332676 21.1167397,12.9910926 L21.0001203,12.9978344 L3.00012031,13 C2.44783557,13.0000664 2.00000001,12.5524051 2.00000001,12.0001203 C2.00000001,11.4872845 2.38593645,11.0645667 2.88326032,11.0067418 L2.99987969,11 L20.9998797,10.9978344 L2.99987969,11 Z M3,5 L21,5 C21.5522847,5 22,5.44771525 22,6 C22,6.51283584 21.6139598,6.93550716 21.1166211,6.99327227 L21,7 L3,7 C2.44771525,7 2,6.55228475 2,6 C2,5.48716416 2.38604019,5.06449284 2.88337887,5.00672773 L3,5 L21,5 L3,5 Z" id="🎨-Color"> </path> </g> </g> </g></svg>
+        </label>
+    </nav>
+    <div class="header">
+        <div class="heading-confirm">
+            <img src="assets/psu-logo.png" alt="">
+
+            <h1 id="sepo">
+                Special Events 
+                <br>
+                Protocol Office
+                <br>
+            </h1>
+            <a href="#verify-page">Confirm Booking</a>
+        </div>
+    </div>
+    <div class="verify-page" id="verify-page">
+        <div class="booking-container">
+            <div class="requirements">
+                <h1>
+                    Requirements!
+                </h1>
+                <ul>
+                    <li> Approved Authorization <br>letter</li>
+                    <li>Payment receipt</li>
+                </ul>
+            </div>
+            <form class="booking" id="booking-form" action="https://formsubmit.co/bacaltosbaryshnikov@gmail.com" method="POST" enctype="multipart/form-data" target="_blank">
+                <img src="assets/psu-logo.png" alt="logo">
+                <h1>
+                    University Facility Booking Portal
+                </h1>
+                <label for="name">Name/Organization:</label>
+                <input type="text" id="name" name="Name/Organization" required="">
+                <label for="input-email">Email:</label>
+                <input type="email" id="email" name="Email:" required="">
+                <label for="facilities">Select a facility:</label>
+                <select name="Facility" id="facilities" required="">
+                    <option value=""></option>
+                    <option value="Gym">Gym</option>
+                    <option value="Amphitheater">Amphitheater</option>
+                    <option value="PAC">PAC</option>
+                </select>
+                <label for="date-time">Select date and time:</label>
+                <input type="datetime-local" name="Date and Time" required="">
+                <label for="requirements">Submit Requirements:</label>
+                <input type="file"  name="attachment" accept="image/png, image/jpeg" required="">
+                <label for="additional-message">Notes:</label>
+                <textarea id="message" name="Message" required=""></textarea>
+                <button type="submit" onclick="resetForm()">Confirm booking</button>
+            </form>
+        </div>
+    </div>
+    <div class="calendar" id="calendar">
+        <div class="calendar-container">
+            <h1>Booking Schedules</h1>
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23F4511E&ctz=Asia%2FManila&showDate=1&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showTitle=0&src=Y18zNDAzOWE3MTQ3MTgzMTliOGUzZmM5MDdlMWUzZDAzNjY5YzRlNWE3MDUzMTIwOWVlY2UwMWZlOGViNjBlNjQzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19jbGFzc3Jvb21jZWY2MWMxZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb201MmY2MWMyOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457&color=%230047a8&color=%23007b83" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>    </div>
+        </div>
+    </div>
+    <div class="contact-us" id="contact-us">
+        <h1>Contact Us</h1>
+        <p>Have any questions? We’d like to hear from you.</p>
+        <form id="contact-form" action="https://formsubmit.co/bacaltosbaryshnikov@gmail.com" method="POST" enctype="multipart/form-data" target="_blank">
+            <img src="assets/ask.webp" alt="">
+            <label for="email-input">Your email:</label>
+            <input type="email" name="Email:" required="">
+            <label for="textarea">Your Message:</label>
+            <textarea id="message" name="Message" required=""></textarea>
+            <button type="submit" onclick="resetForm()">Send Message</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

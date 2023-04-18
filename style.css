@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;
+}
+html {
+    user-select: none;
+    scroll-behavior: smooth;
+}
+body{
+    --nav-height: 50px;
+    padding-top: var(--nav-height);
+    color: #171717;
+    background: white;
+    background-size: cover;
+    -webkit-tap-highlight-color: transparent;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+nav{
+    background: #f15b26;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    z-index: 1;
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    transition: 0.2s;
+    align-items: center;
+}
+#navigator{
+    display: none;
+}
+#logo{
+    margin-left: 50px;
+    line-height: 80px;
+    width: 45px;
+    height: 40px;
+    
+}
+nav label{
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+nav ul {
+    margin-left: 70%;
+    margin-right: 20px;
+}
+
+nav ul h6 {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul h6 a{
+    color: #f9f9f9;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 50px;
+}
+nav ul h6 a:hover{
+    background-color: #f9f9f9 ;
+    color: #f15b26;
+}
+.nav--hidden{
+    transform: translateY(calc(-1 * var(--nav-height)));
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    background: url(assets/psu.jpg);
+    background-size: cover;
+}
+.heading-confirm{
+    width: 75%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 75px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+#sepo{
+    font-size: 60px;
+    font-weight: bolder;
+    border-radius: 30px;
+    color: #f9f9f9;
+}
+.heading-confirm a{
+    margin-top: 30px;
+    border: none;
+    padding: 18px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50px;
+    font-size: 15px;
+    background: #f9f9f9;
+    cursor: pointer;
+    border: solid 1px #f15b26;
+    text-decoration: none;
+    color: #f15b26;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.heading-confirm a:hover{
+    background-color: #f15b26;
+    color: #fbeaff;
+    transition: 0.2s;
+}
+
+.header img{
+    width: 350px;
+    height: 300px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+.verify-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #f9fafc;
+}
+.booking-container{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-self: center;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px 10px #fbeaff;
+    padding: 10px;
+}
+.requirements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: #171717;
+}
+.requirements ul{
+    padding: 20px;
+}
+.requirements ul li{
+    margin-bottom: 10px;
+}
+.booking{
+    width: 40%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.booking h1{
+    text-align: center;
+}
+.booking img{
+    padding: 20px;
+    width: 225px;
+    height: 200px;
+    align-self: center;
+    
+}
+.booking select, input{
+    font-size: 15px;
+    height: 30px;
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+.booking textarea{
+    resize: none;
+}
+.booking label{
+    margin-top: 10px;
+}
+
+.booking button{
+    width: 50%;
+    margin-top: 10px;
+    border: solid 1px #f15b26; 
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    align-self: center;
+    background: #f9fafc;
+    color: #f15b26;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.booking button:hover{
+    background-color: #f15b26;
+    color: #fbeaff;
+    transition: 0.2s;
+}
+
+#message{
+    font-size: 12px;
+    height: 100px;
+    border-radius: 10px;
+}
+.calendar{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #f9fafc;
+}
+.calendar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    width: 75%;
+    align-self: center;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px 10px #fbeaff;
+}
+.calendar-container iframe{
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    border-radius: 20px;    
+    font-family: 'Poppins', sans-serif;
+}
+.calendar h1{
+    align-self: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+.calendar img{
+    width: 1000px;
+    height: 700px;
+    justify-self: center;
+    align-self: center;
+}
+
+.contact-us{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #f9fafc;
+}
+.contact-us h1{
+    margin-top: 100px;
+    font-size: 50px;
+}
+.contact-us p{
+    font-size: 20px;
+}
+.contact-us form{
+    margin-top: 20px;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 2px #fbeaff;
+}
+.contact-us form img{
+    width: 500px;
+    height: 300px;
+    align-self: center;
+}
+.contact-us label, textarea, input{
+    margin-bottom: 10px;
+    resize: none;
+}
+.contact-us form button{
+    align-self: start;
+}
+.contact-us form button{
+    width: 40%;
+    margin-top: 10px;
+    border: solid 1px #f15b26;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    align-self: center;
+    background: #f9fafc;
+    color: #f15b26;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.contact-us form button:hover{
+    background-color: #f15b26;
+    color: #fbeaff;
+    transition: 0.2s;
+}
+
+
+@media (max-width: 1709px){
+    nav ul {
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1366){
+    
+}
+
+@media (max-width: 768px){
+    #navigator{
+        position: fixed;
+        display: block;
+        margin-top: 8px;
+        line-height: 50px;
+    }
+    
+    nav ul {
+   
+        position: fixed;
+        width: 55%;
+        height: 100%;
+        top: 50px;
+        left: -110%;
+        text-align: center;
+        transition: all .3s;
+        background-color: #f9f9f9;
+        
+      }
+      nav ul h6{
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+        
+      }
+      nav ul h6 a{
+        font-size: 18px;
+        color: #f15b26;
+      }
+      nav ul h6 a:hover{
+        transition: 0.2s;
+        background: #EDEDED;
+      }
+      
+      .active ul{
+        left: -50px;
+      }
+      .active .checkbtn{
+        
+        display: none;
+      }
+      .active .closebtn{
+        
+        display: block;
+        
+      }
+    /*first page*/
+    .heading-confirm{
+        width: auto;
+    }
+    #sepo{
+        font-size: 40px;
+    }
+    .heading-confirm a{
+        font-size: 12px;
+    }
+    
+    .header img{
+        width: 225px;
+        height: 200px;
+    }
+
+    /*second page*/
+    .verify-page{
+        height: 120%;
+    }
+    .requirements{
+        font-size: 11px;
+    }
+    .booking-container{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: auto;
+    }
+    .booking{
+        padding: 2px;
+        width: auto;
+    }
+    .booking-container form img{
+        width: 125px;
+        height: 100px;
+    }
+    .booking-container form h1{
+        font-size: 20px;
+    }
+
+    /*third page*/
+
+
+    .calendar{
+        width: auto;
+        height: 120%;
+    }
+    .calendar-container{
+        width: auto;
+        text-align: center;
+    }
+    .calendar-container h1{
+        font-size: 20px;
+    }
+    .calendar-container iframe{
+        width: auto;
+        height: 600px;
+        padding: 0px;
+        border: none;
+        border-radius: 5px;
+    }
+
+
+    /*fourth page*/
+
+    .contact-us{
+        width: auto;
+        height: 120%;
+        padding: 20px;
+    }
+    .contact-us h1{
+        font-size: 30px;
+    }
+    .contact-us p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .contact-us form img{
+        width: 300px;
+        height: 200px;
+    }
+    .contact-us form{
+        width: 75%;
+    }
+    .contact-us form button{
+        font-size: 11px;
+    }
+}
+/*DEPLOYED*/
