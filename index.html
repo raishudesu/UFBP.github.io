@@ -10,13 +10,18 @@
     <meta property="og:url" content="https://raishudesu.github.io/UFBP.github.io/">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="manifest" href="assets/site.webmanifest">
 </head>
 <body>
     <nav id="navbar" class="nav">
         <img id="logo" src="assets/psu-logo.png" alt="logo">
         <label for="">SEPO</label>
         <ul>
-            <h6><a id="a1" href="#top">Home</a></h6>
+            <h6><a id="a1" href="#top">Home</a></h6> 
             <h6><a id="a2" href="#calendar">Schedules</a></h6>
             <h6><a id="a3" href="#contact-us">Contact</a></h6>
         </ul>
@@ -27,7 +32,6 @@
     <div class="header">
         <div class="heading-confirm">
             <img src="assets/psu-logo.png" alt="">
-
             <h1 id="sepo">
                 Special Events 
                 <br>
@@ -41,11 +45,12 @@
         <div class="booking-container">
             <div class="requirements">
                 <h1>
-                    Requirements!
+                    Requirements
                 </h1>
                 <ul>
-                    <li> Approved Authorization <br>letter</li>
-                    <li>Payment receipt</li>
+                    <li> Approved Authorization <br>Letter</li>
+                    <li>Payment Receipt</li>
+                    <li>Accreditation Letter <br>&#40;For Student Orgs.&#41;</li>
                 </ul>
             </div>
             <form class="booking" id="booking-form" action="https://formsubmit.co/bacaltosbaryshnikov@gmail.com" method="POST" enctype="multipart/form-data" target="_blank">
@@ -55,22 +60,47 @@
                 </h1>
                 <label for="name">Name/Organization:</label>
                 <input type="text" id="name" name="Name/Organization" required="">
+                <label for="organization">Booking as:</label>
+                <select name="Priority" id="priority">
+                    <option value=""></option>
+                    <option value="Student Organization">Student Organization</option>
+                    <option value="Faculty">Faculty</option>
+                    <option value="Outside University">Outside University</option>
+                </select>
                 <label for="input-email">Email:</label>
                 <input type="email" id="email" name="Email:" required="">
-                <label for="facilities">Select a facility:</label>
+                <label for="facilities">Select a Facility:</label>
                 <select name="Facility" id="facilities" required="">
                     <option value=""></option>
                     <option value="Gym">Gym</option>
                     <option value="Amphitheater">Amphitheater</option>
                     <option value="PAC">PAC</option>
                 </select>
-                <label for="date-time">Select date and time:</label>
-                <input type="datetime-local" name="Date and Time" required="">
+                <div class="date-duration">
+                    <div class="start-date">
+                        <label for="starting-date">Select Starting Date:</label>
+                        <input type="date" name="Date-Start" required="">
+                    </div>
+                    <div class="end-date">
+                        <label for="ending-date">Select Ending Date:</label>
+                        <input type="date" name="End-Start" required="">
+                    </div>
+                </div>
+                <div class="time-duration">
+                    <div class="start-time">
+                        <label for="starting-time">Select Starting Time:</label>
+                        <input type="time" name="Start-Time" required="">
+                    </div>
+                    <div class="end-time">
+                        <label for="ending-time">Select Ending Time:</label>
+                        <input type="time" name="End-Time" required="">
+                    </div>
+                </div>
                 <label for="requirements">Submit Requirements:</label>
                 <input type="file"  name="attachment" accept="image/png, image/jpeg" required="">
                 <label for="additional-message">Notes:</label>
                 <textarea id="message" name="Message" required=""></textarea>
-                <button type="submit" onclick="resetForm()">Confirm booking</button>
+                <button type="submit" onclick="resetForm()">Confirm Booking</button>
             </form>
         </div>
     </div>
@@ -91,6 +121,7 @@
             <textarea id="message" name="Message" required=""></textarea>
             <button type="submit" onclick="resetForm()">Send Message</button>
         </form>
+        <a href="#top" id="up">Back to top</a>
     </div>
     <script src="script.js"></script>
 </body>
