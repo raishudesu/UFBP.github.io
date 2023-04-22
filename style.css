@@ -7,6 +7,7 @@
 html {
     user-select: none;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     --nav-height: 50px;
@@ -385,6 +386,7 @@ nav ul h6 a:hover{
 }
 
 @media (max-width: 768px){
+
     #navigator{
         position: fixed;
         display: block;
