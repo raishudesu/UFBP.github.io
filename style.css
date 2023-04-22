@@ -36,6 +36,7 @@ nav{
     position: fixed;
     transition: 0.2s;
     align-items: center;
+    z-index: 2;
 }
 #navigator{
     display: none;
@@ -88,15 +89,20 @@ nav ul h6 a:hover{
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
+    display: flex;
+    background: #f9fafc;
 }
 .background{    
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 80%;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     background: url("assets/psu1.jpg") no-repeat center;
     background-size: cover;
     filter: blur(5px);
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
 }
 .heading-confirm{
     width: fit-content;
@@ -106,6 +112,7 @@ nav ul h6 a:hover{
     flex-direction: column;
     padding: 75px;
     text-align: center;
+    z-index: 1;
 }
 #sepo{
     font-size: 60px;
@@ -386,7 +393,9 @@ nav ul h6 a:hover{
 }
 
 @media (max-width: 768px){
-
+    .background{
+        width: 95%; height: 95%;
+    }
     #navigator{
         position: fixed;
         display: block;
