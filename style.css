@@ -324,39 +324,56 @@ nav ul h6 a:hover{
     align-items: center;
     background-color: #f9fafc;
 }
+
 .contact-us h1{
     margin-top: 100px;
     font-size: 50px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
 }
 .contact-us p{
     font-size: 20px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
 }
-.contact-us form{
-    margin-top: 20px;
-    width: 30%;
+.contact-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+}
+
+.contact-container form{
+    width: 20%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     font-size: 15px;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0px 0px 30px 2px #fbeaff;
     overflow: hidden;
+    justify-self: center;
+    align-self: center;
 }
-.contact-us form img{
+.contact-container form img{
     max-width: 80%;
     height: auto;
     align-self: center;
 }
-.contact-us label, textarea, input{
+.contact-container label, textarea, input{
     margin-bottom: 10px;
     resize: none;
 }
-.contact-us form button{
+.contact-container form button{
     align-self: start;
 }
-.contact-us form button{
+.contact-container form button{
     width: 40%;
     margin-top: 10px;
     border: solid 1px #f15b26;
@@ -370,14 +387,51 @@ nav ul h6 a:hover{
     cursor: pointer;
     transition: 0.2s;
 }
-.contact-us form button:hover{
+.contact-container form button:hover{
     background-color: #f15b26;
     color: #fbeaff;
     transition: 0.2s;
 }
+.mapouter{
+    margin: 20px;
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:35%;
+    align-self: center;
+    justify-self: center;
+
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none
+    !important;
+    height:100%;
+    width:100%;
+}
 #up{
     margin-top: 50px;
     cursor: pointer;
+}
+.footer{
+    width: 100%;
+    background: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.footer h1{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.footer p{
+    font-weight: lighter;
+    font-size: 11px;
+    color:white;
+    padding: 10px;
 }
 
 @media (max-width: 1709px){
@@ -422,6 +476,7 @@ nav ul h6 a:hover{
         height: 120%;
         padding: 20px;
     }
+
     .contact-us h1{
         font-size: 30px;
     }
@@ -429,10 +484,19 @@ nav ul h6 a:hover{
         font-size: 16px;
         text-align: center;
     }
-    .contact-us form{
+    .contact-container{
+        flex-direction: column;
+    }
+    .mapouter{
         width: 90%;
     }
-    .contact-us form button{
+    .gmap_canvas a{
+        display: none;
+    }
+    .contact-container form{
+        width: 90%;
+    }
+    .contact-container form button{
         font-size: 11px;
     }
     #up{
