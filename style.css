@@ -394,7 +394,6 @@ nav ul h6 a:hover{
         flex-direction: column;
         justify-items: center;
         align-items: center;
-       
     }
     .booking{
         padding: 2px;
@@ -408,9 +407,7 @@ nav ul h6 a:hover{
         height: 30px;
         border: solid 2px gray;
         border-radius: 10px;
-        
     }
-    
     .booking-container form img{
         width: 125px;
         height: 100px;
@@ -432,7 +429,6 @@ nav ul h6 a:hover{
         font-size: 16px;
         text-align: center;
     }
-   
     .contact-us form{
         width: 90%;
     }
@@ -450,7 +446,7 @@ nav ul h6 a:hover{
 }
 @media (max-width: 768px){
     .background{
-        width: 95%; height: 95%;
+        width: 90%; height: 90%;
         border-radius: 30px;
     }
     #navigator{
