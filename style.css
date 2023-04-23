@@ -215,11 +215,11 @@ nav ul h6 a:hover{
 }
 .start-date{
     margin-right: 5px;
-    width: 100%;
+    max-width: 100%;
 }
 .end-date{
     margin-left: 5px;
-    width: 100%;
+    max-width: 100%;
 }
 .time-duration{
     margin-top: 10px;
@@ -243,7 +243,7 @@ nav ul h6 a:hover{
     width: 100%;
 }
 .booking select{
-    width: 100.5%;
+    max-width: 100%;
     height: 35px;
 }
 .booking textarea{
@@ -298,8 +298,10 @@ nav ul h6 a:hover{
     padding: 30px;
     border-radius: 30px;
     box-shadow: 0px 0px 50px 10px #fbeaff;
+    overflow: hidden;
 }
 .calendar-container iframe{
+    max-width: 100%;
     justify-self: center;
     align-self: center;
     padding: 10px;
@@ -311,12 +313,7 @@ nav ul h6 a:hover{
     font-size: 45px;
     margin-bottom: 50px;
 }
-.calendar img{
-    width: 1000px;
-    height: 700px;
-    justify-self: center;
-    align-self: center;
-}
+
 
 .contact-us{
     width: auto;
@@ -345,10 +342,11 @@ nav ul h6 a:hover{
     background-color: white;
     border-radius: 30px;
     box-shadow: 0px 0px 30px 2px #fbeaff;
+    overflow: hidden;
 }
 .contact-us form img{
-    width: 500px;
-    height: 300px;
+    max-width: 80%;
+    height: auto;
     align-self: center;
 }
 .contact-us label, textarea, input{
@@ -388,10 +386,68 @@ nav ul h6 a:hover{
         margin-right: 20px;
     }
 }
-@media (max-width: 1366){
-
+@media (max-width: 1069px){
+    .requirements{
+        font-size: 11px;
+    }
+    .booking-container{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+       
+    }
+    .booking{
+        padding: 2px;
+        width: auto;
+    }
+    .booking label{
+        font-size: 12px;
+    }
+    .booking select, input{
+        font-size: 12px;
+        height: 30px;
+        border: solid 2px gray;
+        border-radius: 10px;
+        
+    }
+    
+    .booking-container form img{
+        width: 125px;
+        height: 100px;
+    }
+    .booking-container form h1{
+        font-size: 20px;
+    }
+    .booking button{
+        font-size: 11px;
+    }
+    .contact-us{
+        height: 120%;
+        padding: 20px;
+    }
+    .contact-us h1{
+        font-size: 30px;
+    }
+    .contact-us p{
+        font-size: 16px;
+        text-align: center;
+    }
+   
+    .contact-us form{
+        width: 90%;
+    }
+    .contact-us form button{
+        font-size: 11px;
+    }
+    #up{
+        font-size: 12px;
+    }
 }
-
+@media (max-width: 267px){
+    .header{
+        display: none;
+    }
+}
 @media (max-width: 768px){
     .background{
         width: 95%; height: 95%;
@@ -451,40 +507,10 @@ nav ul h6 a:hover{
     .verify-page{
         height: 120%;
     }
-    .requirements{
-        font-size: 11px;
-    }
     .booking-container{
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        width: auto;
+        overflow: hidden;
+        width: 90%;
     }
-    .booking{
-        padding: 2px;
-        width: auto;
-    }
-    .booking label{
-        font-size: 12px;
-    }
-    .booking select, input{
-        font-size: 12px;
-        height: 30px;
-        border: solid 2px gray;
-        border-radius: 10px;
-    }
-    
-    .booking-container form img{
-        width: 125px;
-        height: 100px;
-    }
-    .booking-container form h1{
-        font-size: 20px;
-    }
-    .booking button{
-        font-size: 11px;
-    }
-
     /*third page*/
 
 
@@ -509,29 +535,6 @@ nav ul h6 a:hover{
 
     /*fourth page*/
 
-    .contact-us{
-        height: 120%;
-        padding: 20px;
-    }
-    .contact-us h1{
-        font-size: 30px;
-    }
-    .contact-us p{
-        font-size: 16px;
-        text-align: center;
-    }
-    .contact-us form img{
-        width: 300px;
-        height: 200px;
-    }
-    .contact-us form{
-        width: 90%;
-    }
-    .contact-us form button{
-        font-size: 11px;
-    }
-    #up{
-        font-size: 12px;
-    }
+    
 }
 /*DEPLOYED*/
