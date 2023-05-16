@@ -103,7 +103,7 @@
                 <input type="file"  name="attachment" accept="image/png, image/jpeg, .zip, .rar" required="" multiple="multiple">
                 <label for="additional-message">Notes:</label>
                 <textarea id="message" name="Message" required=""></textarea>
-                <button type="submit" onclick="resetForm()">Confirm Booking</button>
+                <button type="submit" onclick="resetForm(); submitSuccessBForm()">Confirm Booking</button>
             </form>
         </div>
     </div>
@@ -123,7 +123,7 @@
                 <input type="email" name="Email:" required="">
                 <label for="textarea">Your Message:</label>
                 <textarea id="message" name="Message" required=""></textarea>
-                <button type="submit" onclick="resetForm()">Send Message</button>
+                <button type="submit" onclick="resetForm(); submitSuccessCForm()">Send Message</button>
             </form>
             <div class="mapouter">
                 <div class="gmap_canvas">
@@ -143,7 +143,8 @@
         </h1>
         <p>“Palawan State University is committed to <br>upgrade people’s quality of life by providing education <br>opportunities through excellent instruction, research and innovation, <br>extension, production services, and transnational collaborations.”</p>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
